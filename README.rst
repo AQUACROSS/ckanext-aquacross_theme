@@ -1,166 +1,40 @@
-.. You should enable this project on travis-ci.org and coveralls.io to make
-   these badges work. The necessary Travis and Coverage config files have been
-   generated for you.
+# ckanext-aquacross_theme
 
-.. image:: https://travis-ci.org/AQUACROSS/ckanext-aquacross_theme.svg?branch=master
-    :target: https://travis-ci.org/AQUACROSS/ckanext-aquacross_theme
+CKAN extension
+============
 
-.. image:: https://coveralls.io/repos/AQUACROSS/ckanext-aquacross_theme/badge.svg
-  :target: https://coveralls.io/r/AQUACROSS/ckanext-aquacross_theme
+CKAN extension for the AQUACROSS Information Portal as part of the `AQUACROSS Project <http://aquacross.eu>`_ 
 
-.. image:: https://pypip.in/download/ckanext-aquacross_theme/badge.svg
-    :target: https://pypi.python.org/pypi//ckanext-aquacross_theme/
-    :alt: Downloads
+##Dependencies
+- CKAN v2.5.1
 
-.. image:: https://pypip.in/version/ckanext-aquacross_theme/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-aquacross_theme/
-    :alt: Latest Version
+##Installation: 
+1. Activate your CKAN virtual environment, for example:
+```
+. /usr/lib/ckan/default/bin/activate
+```
+2. Install the ckanext-aquacross_theme Python package into your virtual environment:
+```
+$ pip install -e git+https://github.com/AQUACROSS/ckanext-aquacross_theme.git#egg=ckanext-aquacross_theme
+```
+3. Activate aquacross_theme extension in the .ini file, for example: 
+```
+/etc/ckan/default/development.ini
+```
+```
+ckan.plugins = aquacross_theme
+```
+4. Restart Apache
+```
+# sudo /etc/init.d/apache2 restart
+```
 
-.. image:: https://pypip.in/py_versions/ckanext-aquacross_theme/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-aquacross_theme/
-    :alt: Supported Python versions
+##Community
+This extension is currently developed by:
+* `The Intergovernmental Oceanographic Commission of UNESCO (IOC-UNESCO) <http://www.unesco.org/new/en/natural-sciences/ioc-oceans/>`_
+* `University College Cork, National University of Ireland (UCC) <http://www.ucc.ie/en/>`_
+* `BC3 Basque Centre for Climate Change (BC3) <http://www.bc3research.org>`_
+* `The Royal Belgian Institute of Natural Sciences (RBINS) <https://www.naturalsciences.be/>`_
+* `Belgium and the Leibniz Institute of Freshwater Ecology and Inland Fisheries (FVB-IGB) <http://www.igb-berlin.de/igb_homepage.html>`_
 
-.. image:: https://pypip.in/status/ckanext-aquacross_theme/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-aquacross_theme/
-    :alt: Development Status
-
-.. image:: https://pypip.in/license/ckanext-aquacross_theme/badge.svg
-    :target: https://pypi.python.org/pypi/ckanext-aquacross_theme/
-    :alt: License
-
-=============
-ckanext-aquacross_theme
-=============
-
-.. Put a description of your extension here:
-   What does it do? What features does it have?
-   Consider including some screenshots or embedding a video!
-
-
-------------
-Requirements
-------------
-
-For example, you might want to mention here which versions of CKAN this
-extension works with.
-
-
-------------
-Installation
-------------
-
-.. Add any additional install steps to the list below.
-   For example installing any non-Python dependencies or adding any required
-   config settings.
-
-To install ckanext-aquacross_theme:
-
-1. Activate your CKAN virtual environment, for example::
-
-     . /usr/lib/ckan/default/bin/activate
-
-2. Install the ckanext-aquacross_theme Python package into your virtual environment::
-
-     pip install ckanext-aquacross_theme
-
-3. Add ``aquacross_theme`` to the ``ckan.plugins`` setting in your CKAN
-   config file (by default the config file is located at
-   ``/etc/ckan/default/production.ini``).
-
-4. Restart CKAN. For example if you've deployed CKAN with Apache on Ubuntu::
-
-     sudo service apache2 reload
-
-
----------------
-Config Settings
----------------
-
-Document any optional config settings here. For example::
-
-    # The minimum number of hours to wait before re-checking a resource
-    # (optional, default: 24).
-    ckanext.aquacross_theme.some_setting = some_default_value
-
-
-------------------------
-Development Installation
-------------------------
-
-To install ckanext-aquacross_theme for development, activate your CKAN virtualenv and
-do::
-
-    git clone https://github.com/AQUACROSS/ckanext-aquacross_theme.git
-    cd ckanext-aquacross_theme
-    python setup.py develop
-    pip install -r dev-requirements.txt
-
-
------------------
-Running the Tests
------------------
-
-To run the tests, do::
-
-    nosetests --nologcapture --with-pylons=test.ini
-
-To run the tests and produce a coverage report, first make sure you have
-coverage installed in your virtualenv (``pip install coverage``) then run::
-
-    nosetests --nologcapture --with-pylons=test.ini --with-coverage --cover-package=ckanext.aquacross_theme --cover-inclusive --cover-erase --cover-tests
-
-
----------------------------------
-Registering ckanext-aquacross_theme on PyPI
----------------------------------
-
-ckanext-aquacross_theme should be availabe on PyPI as
-https://pypi.python.org/pypi/ckanext-aquacross_theme. If that link doesn't work, then
-you can register the project on PyPI for the first time by following these
-steps:
-
-1. Create a source distribution of the project::
-
-     python setup.py sdist
-
-2. Register the project::
-
-     python setup.py register
-
-3. Upload the source distribution to PyPI::
-
-     python setup.py sdist upload
-
-4. Tag the first release of the project on GitHub with the version number from
-   the ``setup.py`` file. For example if the version number in ``setup.py`` is
-   0.0.1 then do::
-
-       git tag 0.0.1
-       git push --tags
-
-
-----------------------------------------
-Releasing a New Version of ckanext-aquacross_theme
-----------------------------------------
-
-ckanext-aquacross_theme is availabe on PyPI as https://pypi.python.org/pypi/ckanext-aquacross_theme.
-To publish a new version to PyPI follow these steps:
-
-1. Update the version number in the ``setup.py`` file.
-   See `PEP 440 <http://legacy.python.org/dev/peps/pep-0440/#public-version-identifiers>`_
-   for how to choose version numbers.
-
-2. Create a source distribution of the new version::
-
-     python setup.py sdist
-
-3. Upload the source distribution to PyPI::
-
-     python setup.py sdist upload
-
-4. Tag the new release of the project on GitHub with the version number from
-   the ``setup.py`` file. For example if the version number in ``setup.py`` is
-   0.0.2 then do::
-
-       git tag 0.0.2
-       git push --tags
+AQUACROSS has received funding from the European Union’s Horizon 2020 Programme for Research, Technological Development and Demonstration under Grant Agreement no. 642317.
