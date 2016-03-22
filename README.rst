@@ -34,10 +34,15 @@ Community
 =========
 
 This extension is currently developed by:
-* `The Intergovernmental Oceanographic Commission of UNESCO (IOC-UNESCO) <http://www.unesco.org/new/en/natural-sciences/ioc-oceans/>`_
-* `University College Cork, National University of Ireland (UCC) <http://www.ucc.ie/en/>`_
-* `BC3 Basque Centre for Climate Change (BC3) <http://www.bc3research.org>`_
-* `The Royal Belgian Institute of Natural Sciences (RBINS) <https://www.naturalsciences.be/>`_
-* `Belgium and the Leibniz Institute of Freshwater Ecology and Inland Fisheries (FVB-IGB) <http://www.igb-berlin.de/igb_homepage.html>`_
+
+     * `The Intergovernmental Oceanographic Commission of UNESCO (IOC-UNESCO) <http://www.unesco.org/new/en/natural-sciences/ioc-oceans/>`_
+
+     * `University College Cork, National University of Ireland (UCC) <http://www.ucc.ie/en/>`_
+
+     * `BC3 Basque Centre for Climate Change (BC3) <http://www.bc3research.org>`_
+
+     * `The Royal Belgian Institute of Natural Sciences (RBINS) <https://www.naturalsciences.be/>`_
+
+     * `Belgium and the Leibniz Institute of Freshwater Ecology and Inland Fisheries (FVB-IGB) <http://www.igb-berlin.de/igb_homepage.html>`_
 
 AQUACROSS has received funding from the European Union’s Horizon 2020 Programme for Research, Technological Development and Demonstration under Grant Agreement no. 642317.
