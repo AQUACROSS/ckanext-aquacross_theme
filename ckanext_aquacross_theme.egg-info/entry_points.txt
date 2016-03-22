@@ -1,0 +1,6 @@
+
+        [ckan.plugins]
+        aquacross_theme=ckanext.aquacross_theme.plugin:Aquacross_ThemePlugin
+	[babel.extractors]
+	ckan = ckan.lib.extract:extract_ckan
+    

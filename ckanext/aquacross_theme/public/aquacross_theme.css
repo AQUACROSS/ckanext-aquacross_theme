@@ -1,0 +1,104 @@
+/* ========================================================================
+   The main masthead bar that contains the site logo, nav links, and search
+   ======================================================================== */
+
+.hero {
+  background: url(/bolonia2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 264px; /* 185 = works in both IE and Firefox, 250=good, 264=height of main background image */
+}
+
+.masthead {
+/*  background: url(/AQUACROSS_logo_small.png);*/
+  background-color: white;
+/*  background-repeat: no-repeat;
+  background-position: left 10px;
+  min-height: 125px; */
+}
+
+.account-masthead {
+    background-color: rgb(14, 122, 129);
+}
+
+
+
+/* Change the colors of the "Search Your Data" box. */
+
+.homepage .module-search .module-content {
+    background-color:#03757A;
+    border-bottom: medium none;
+    border-radius: 3px 3px 0 0;
+}
+
+.homepage .module-search .tags {
+    background-color: #DFC41C;
+    border-radius: 0 0 3px 3px;
+    padding: 5px 10px 10px;
+}
+
+
+
+.masthead::before, .masthead::after {
+    content: "";
+    display: table;
+    line-height: 0;
+    margin-bottom: 10px;
+}
+
+.masthead .nav > li > a, .masthead .nav > li > a:focus, .masthead .nav > li > a:hover, .masthead .nav > .active > a, .masthead .nav > .active > a:hover, .masthead .nav > .active > a:focus {
+    color: rgb(14,122,129);
+    text-shadow: none;
+}
+
+
+.masthead .navigation .nav-pills li a:hover, .masthead .navigation .nav-pills li.active a {
+    background-color: #dfc41c;
+}
+
+.media-overlay .media-heading {
+    background-color: white;
+    border-radius: 0 0 3px 3px;
+    bottom: 0;
+    color: #fff;
+    font-size: 13px;
+    left: 0;
+    margin: 0;
+    padding: 12px 10px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+/*This section is for buttons*/
+
+.btn-primary {
+    background-color: #0E7A81;
+    background-image: linear-gradient(to bottom, #0E7A81,#0E7A81);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* ====================================
+   The footer at the bottom of the site
+   ==================================== */
+
+.site-footer,
+body {
+  background-color: rgb(14, 122, 129);
+}
+/* The text in the footer. */
+.site-footer,
+.site-footer label,
+.site-footer small {
+  color: rgba(255, 255, 255, 0.6);
+}
+/* The link texts in the footer. */
+.site-footer a {
+  color: rgba(255, 255, 255, 0.6);
+}
