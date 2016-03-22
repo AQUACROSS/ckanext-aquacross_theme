@@ -7,28 +7,28 @@ CKAN extension for the AQUACROSS Information Portal as part of the `AQUACROSS Pr
 
 Dependencies::
 
-- CKAN v2.5.1
+     CKAN v2.5.1
 
 Installation
 ============
 
 1. Activate your CKAN virtual environment, for example::
 
-$. /usr/lib/ckan/default/bin/activate
+     $. /usr/lib/ckan/default/bin/activate
 
 2. Install the ckanext-aquacross_theme Python package into your virtual environment::
 
-$ pip install -e git+https://github.com/AQUACROSS/ckanext-aquacross_theme.git#egg=ckanext-aquacross_theme
+     $ pip install -e git+https://github.com/AQUACROSS/ckanext-aquacross_theme.git#egg=ckanext-aquacross_theme
 
 3. Activate aquacross_theme extension in the .ini file, for example:: 
 
-/etc/ckan/default/development.ini
+     /etc/ckan/default/development.ini
 
-ckan.plugins = aquacross_theme
+     ckan.plugins = aquacross_theme
 
 4. Restart Apache::
 
-$ /etc/init.d/apache2 restart
+     $ /etc/init.d/apache2 restart
 
 Community
 =========
