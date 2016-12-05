@@ -1,0 +1,15 @@
+{% ckan_extends %}
+
+{% block primary_content_inner %}
+  {{ super() }}
+
+  {% if pkg.spatial  %}
+    {% snippet "spatial/snippets/dataset_map.html", extent=pkg.spatial %}
+  {% endif %}
+
+  {% set dataset_extent = h.get_pkg_dict_extra(c.pkg_dict, 'spatial', '') %}
+  {% if dataset_extent %}
+    {% snippet "spatial/snippets/dataset_map.html", extent=dataset_extent %}
+  {% endif %}
+
+{% endblock %}
